@@ -203,7 +203,7 @@ declare namespace GoldenLayout {
          * addition, any changes made to popouts won't be stored after the parent is closed.
          * Default: true
          */
-        closePopoutsOnUnload?: boolean
+        closePopoutsOnUnload?: boolean;
 
         /**
          * Specifies if the popout icon should be displayed in the header-bar.
@@ -359,7 +359,7 @@ declare namespace GoldenLayout {
         settings?: Settings;
         dimensions?: Dimensions;
         labels?: Labels;
-        content: (ItemConfig | ComponentConfig | ReactComponentConfig)[]
+        content: (ItemConfig | ComponentConfig | ReactComponentConfig)[];
     }
 
     export interface ContentItem {
@@ -505,7 +505,7 @@ declare namespace GoldenLayout {
     }
 }
 
-declare module "golden-layout" {
-    var GoldenLayout: GoldenLayout.GoldenLayoutStatic;
+declare module 'golden-layout' {
+    let GoldenLayout: GoldenLayout.GoldenLayoutStatic;
     export = GoldenLayout;
 }
