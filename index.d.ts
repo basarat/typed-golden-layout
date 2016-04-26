@@ -295,7 +295,7 @@ declare namespace GoldenLayout {
         /**
          * The type of the item. Possible values are 'row', 'column', 'stack', 'component' and 'react-component'.
          */
-        type: string;
+        type: 'row' | 'column' | 'stack' | 'component' | 'react-component';
 
         /**
          * An array of configurations for items that will be created as children of this item.
